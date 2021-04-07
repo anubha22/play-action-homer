@@ -13,3 +13,8 @@ jobs:
 
       - name: Say Hello
         run: echo Hello, Homer how are you!
+      
+      - name: Retrieve Secrets
+        env: 
+          super_secret: ${{ secrets.SUPER_SECRET }}
+          run: echo "$super_secret"
