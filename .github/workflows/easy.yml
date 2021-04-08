@@ -1,0 +1,10 @@
+name: Playing with easy workflows
+
+on: [push]
+
+jobs: 
+  another-easy-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo workflows
+        run: echo "Another new workflows"
