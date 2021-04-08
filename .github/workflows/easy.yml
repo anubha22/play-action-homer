@@ -1,6 +1,7 @@
-name: Playing with easy workflows
+name: Manually triggered workflow
 
-on: [push]
+on:  
+  workflow_dispatch:
 
 jobs: 
   easy-job:
