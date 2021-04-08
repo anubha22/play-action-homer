@@ -8,3 +8,5 @@ jobs:
     steps:
       - name: echo workflows
         run: echo "Another new workflows"
+      - name: show all the files
+        run: ls -la
