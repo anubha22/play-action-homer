@@ -3,7 +3,7 @@ name: Playing with easy workflows
 on: [push]
 
 jobs: 
-  another-easy-workflow:
+  easy-job:
     runs-on: ubuntu-latest
     steps:
       - name: echo workflows
