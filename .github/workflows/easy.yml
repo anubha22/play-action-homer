@@ -1,9 +1,9 @@
 name: Setting up Cron workflow
 
 on:  
-  #push:
   schedule:
-    - cron: '1 * * * *'
+    - cron: "* * * * *"
+  #push:
 
 jobs: 
   hello-world-job:
