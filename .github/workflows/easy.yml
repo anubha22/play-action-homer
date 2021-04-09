@@ -1,9 +1,8 @@
-name: Using a Hello World github action Workflow
+name: Setting up Cron workflow
 
 on:  
   schedule:
-    - cron 2 * * * *
-
+    - cron: 2 * * * *
 
 jobs: 
   hello-world-job:
