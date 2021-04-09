@@ -2,7 +2,8 @@ name: Setting up Cron workflow
 
 on:  
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "0/5 * * * *"
+    - cron: "0/5 * * * *"
   #push:
 
 jobs: 
