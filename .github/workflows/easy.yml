@@ -13,4 +13,4 @@ jobs:
         with: 
           who-to-greet: Homer Simpson
       - name: Log out greeting
-        run: echo ${{steps.greet.outputs.time}}
+        run: echo "${{steps.greet.outputs.time}}"
