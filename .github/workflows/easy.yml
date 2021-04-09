@@ -1,13 +1,16 @@
-name: Manually triggered workflow
+name: Using a Hello World github action Workflow
 
 on:  
-  workflow_dispatch:
+  [push]
 
 jobs: 
-  easy-job:
+  hello-world-job:
     runs-on: ubuntu-latest
     steps:
-      - name: echo workflows
-        run: echo "Another new workflows"
-      - name: show all the files
-        run: ls -la
+      - name: Simple JS Action
+        id: greeting
+        run: actions/hello-world-javascript-action@v1.1
+        with: 
+          who-to-greet: Homer Simpson
+      - name: Log out greeting
+        run: echo ${{steps.greeting.outputs.time}}
