@@ -8,9 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Simple JS Action
-        id: greeting
+        id: greet
         uses: actions/hello-world-javascript-action@main
         with: 
           who-to-greet: Homer Simpson
       - name: Log out greeting
-        run: echo ${{steps.greeting.outputs.time}}
+        run: echo ${{steps.greet.outputs.time}}
