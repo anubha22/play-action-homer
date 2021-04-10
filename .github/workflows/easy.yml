@@ -4,8 +4,9 @@ on:
   schedule:
     # This cron schedule works but it took about 20mins to show up on Github
     # - cron: "*/5 * * * *"
-    # On thing I would like to check is does "0/5 * * * *" work?
-    - cron: "0/5 * * * *"
+    # On thing I would like to check is does "0/5 * * * *" work? After testing. Yes it does work. 
+    # Commented out to stop it going on indefinitely. 
+    # - cron: "0/5 * * * *"
   #push:
 
 jobs: 
